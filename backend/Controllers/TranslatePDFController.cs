@@ -11,7 +11,7 @@ namespace Aspose.PDF.Translator.GDrive.Controllers {
   public class TranslatePDFController : ControllerBase {
 
     private string _GetPair() {
-      StringValues pairHeaders = Request.Headers["X-Aspose-Marketplace-GDrive-Backend-Pair"];
+      StringValues pairHeaders = Request.Headers["X-Aspose-PDF-Translator-GDrive-Pair"];
       string pair = pairHeaders.Count == 0 ? "en-ru" : pairHeaders[0];
       return pair;
     }
