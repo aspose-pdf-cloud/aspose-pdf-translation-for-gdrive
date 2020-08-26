@@ -25,7 +25,7 @@ namespace Aspose.PDF.Translator.GDrive {
         return (string.Concat(textRectsResponse.TextOccurrences.List.Select(textRect => textRect.Text)), "");
       }
       finally {
-        ApiResponse<object> apiResponse = api.DeleteFileWithHttpInfo(path);
+        api.DeleteFileWithHttpInfo(path);
       }
     }
   }
